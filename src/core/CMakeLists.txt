@@ -9,6 +9,7 @@ add_library(${BINARY} STATIC ${lib_sources})
 set_property(TARGET ${BINARY} PROPERTY POSITION_INDEPENDENT_CODE ON)
 target_link_libraries(${BINARY} PRIVATE ${Boost_LIBRARIES} Threads::Threads)
 target_link_libraries(${BINARY} PUBLIC easyloggingpp)
+target_link_libraries(${BINARY} PUBLIC /home/slesarev/Desbordante/lib/fastText/build/libfasttext.a)
 
 option(SAFE_VERTICAL_HASHING
         "Enable safe vertical hashing. This feature allows to process\

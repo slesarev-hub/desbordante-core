@@ -94,8 +94,7 @@ endif()
 # configuring boost
 set(Boost_USE_STATIC_LIBS OFF)
 find_package(Boost 1.72.0 REQUIRED COMPONENTS container thread graph)
-include_directories(${Boost_INCLUDE_DIRS})
-message(${Boost_INCLUDE_DIRS})
+include_directories("/usr/include/boost")#${Boost_INCLUDE_DIRS})
 
 # providing subdirectories for header inclusion
 include_directories(
